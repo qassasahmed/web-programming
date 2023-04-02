@@ -13,18 +13,18 @@ let paragraphs = document.getElementsByClassName('color-p');
 let painter = document.getElementById('painter');
 
 
-// painter.onclick = function(){
-//     paragraphs[0].style.color = `red`;
-//     paragraphs[1].style.color = `blue`
-//     painter.value = 'success'.toUpperCase();
-//     painter.style.backgroundColor = `green`;
-//     painter.style.color = `yellow`;
-//     painter.style.display = `block`;
-// }
+painter.onclick = function(){
+    paragraphs[0].style.color = `red`;
+    paragraphs[1].style.color = `blue`
+    painter.value = 'success'.toUpperCase();
+    painter.style.backgroundColor = `green`;
+    painter.style.color = `yellow`;
+    painter.style.display = `block`;
+}
 
-// painter.onclick = function(){
-//     painter.style.background = `red`;
-// }
+painter.onclick = function(){
+    painter.style.background = `red`;
+}
 
 
 painter.addEventListener('click', function(){
