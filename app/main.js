@@ -39,3 +39,4 @@ painter.addEventListener('click', function(){
 painter.addEventListener('click', function(){
     painter.style.background = `red`;
 });
+document.write(painter.style.background)
