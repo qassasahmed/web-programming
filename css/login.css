@@ -45,6 +45,8 @@
     font-style: italic;
 }
 .form-container > form input[type='button']{
+    border-radius: 0;
+    color: #000;
     align-self: flex-end;
     padding: 10px 20px;
     margin-top: 20px;

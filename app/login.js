@@ -1,4 +1,4 @@
-document.body.style.fontFamily = 'Calibri';
+document.body.style.fontFamily = 'Sans-serif';
 document.title = 'Login';
 
 let btn = document.getElementById('idsubmit');
