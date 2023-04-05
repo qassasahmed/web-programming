@@ -1,36 +1,8 @@
-document.getElementsByTagName('body')[0].style.fontFamily = `Calibri`;
-let body = document.body;
-
-function writeInPage(text){
-    document.write(`your text is: ${text}`);
-}
-function addTwoNumbers(n1, n2){
-    return `${n1 + n2}`;
-}
-
-// parsing string into number (int)
-// writeInPage(addTwoNumbers(parseInt(addTwoNumbers(2,5)),5));
-
 
 let paragraphs = document.getElementsByClassName('color-p');
 let painter = document.getElementById('painter');
 
-// painter.onclick = function(){
-//     paragraphs[0].style.color = `red`;
-//     paragraphs[1].style.color = `blue`;
-// };
-
-// painter.onclick = changeColor();
-
-// function changeColor(){
-//     painter.value = 'success'.toUpperCase();
-//     painter.style.backgroundColor = `green`;
-//     painter.style.color = `yellow`;
-// }
-
 painter.addEventListener('click', function(){
-    // paragraphs[0].style.display = `none`;
-    // paragraphs[1].style.display = `none`;
     for(const para of paragraphs) para.classList.add('hide');
     painter.classList.add('hide');
 });
@@ -47,7 +19,6 @@ painter.addEventListener('click', function(){
     }
     body.appendChild(divContainer);
 });
-
 
 
 
