@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <section class="form-section">
+    <header>
+        <div class="header">
+            <div class="links">
+                <ul>
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Gallery</a></li>
+                    <li class="nav-item"><a href="#" target="_blank">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="form-section" id="idform-section" >
         <h2>Login</h2>
         <div class="form-container">
-            <form action="">
+            <form id="idform">
                 <label for="idfname">First name</label>
-                <input type="text" name="fname" id="idfname">
+                <input type="text" name="fname" id="idfname" required>
                 <label for="idlname">Last name</label>
-                <input type="text" name="lname" id="idlname">
+                <input type="text" name="lname" id="idlname" required>
                 <div class="agreement">
                     <input type="checkbox" name="agreement" id="idagreement">
-                    <label for="idagreement">I agree to <a href="#">terms and conditions</a></label>
+                    <label for="idagreement">I agree to <a href="https://www.w3schools.com/html/html_forms.asp">terms and conditions</a></label>
                 </div>
-                <input type="submit" value="login">
+                <input type="button" value="login" id="idsubmit">
             </form>
         </div>
     </section>
+    <footer>
+        <div class="footer">Made with ❤️ and ☕ </div>
+    </footer>
+    <script src="../app/login.js"></script>
 </body>
 </html>

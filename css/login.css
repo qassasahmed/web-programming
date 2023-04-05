@@ -1,0 +1,68 @@
+.form-section{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 80px);
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.form-container > form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0px 20px #eee;
+    border-radius: 10px;
+    font-size: 120%;
+    font-family: monospace;
+}
+
+.form-container > form > input[type='text']{
+    border:none;
+    height: 40px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.form-container > form > input[type='text']:focus{
+    outline: none;
+    /* background-color: #eee; */
+    border-bottom: 2px solid black;
+    font-family: monospace;
+}
+/* .form-container > form > input[type='text']:invalid{
+    outline: none;
+    background-color: #eee;
+    border-bottom: 2px solid red;
+    font-family: monospace;
+} */
+.form-container > form > .agreement{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.form-container > form > .agreement a{
+    font-style: italic;
+}
+.form-container > form input[type='button']{
+    align-self: flex-end;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-family: monospace;
+    background-color: #fff;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+.form-container > form input[type='button']:hover{
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+div.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #eee;
+    padding: 10px 20px
+}

@@ -1,4 +1,4 @@
-
+document.body.style.fontFamily = 'Calibri';
 let paragraphs = document.getElementsByClassName('color-p');
 let painter = document.getElementById('painter');
 
@@ -17,7 +17,7 @@ painter.addEventListener('click', function(){
         divCard.appendChild(text);
         divContainer.appendChild(divCard); 
     }
-    body.appendChild(divContainer);
+    document.body.appendChild(divContainer);
 });
 
 
