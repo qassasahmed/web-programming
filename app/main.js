@@ -8,16 +8,32 @@ painter.addEventListener('click', function(){
 });
 
 painter.addEventListener('click', function(){
-    let divContainer = document.createElement('div');
-    divContainer.classList.add('flex-center');
-    for(let i = 0; i < 5; i++){
-        let divCard = document.createElement('div');
-        divCard.classList.add('card');
-        let text = document.createTextNode('This is my text');
-        divCard.appendChild(text);
-        divContainer.appendChild(divCard); 
+    // let divContainer = document.createElement('div');
+    // divContainer.classList.add('flex-center');
+    // for(let i = 0; i < 5; i++){
+    //     let divCard = document.createElement('div');
+    //     divCard.classList.add('card');
+    //     let text = document.createTextNode('This is my text');
+    //     divCard.appendChild(text);
+    //     divContainer.appendChild(divCard); 
+    // }
+    // document.body.appendChild(divContainer);
+    let timeleft = 20;
+    function countdown(){ 
+        document.getElementById("seconds").innerHTML = `redirecting to login page in <span id="timer">${timeleft}</span> seconds`;        
+        if(timeleft > 0){ 
+            window.setTimeout(countdown, 1000);
+        }
+        else window.location.href = './pages/login.html';
+        timeleft--;
     }
-    document.body.appendChild(divContainer);
+
+    let timing_link = document.createElement('a');
+    timing_link.setAttribute('href', "https://www.w3schools.com/js/js_timing.asp");
+    timing_link.setAttribute('target', "_blank");
+    timing_link.innerHTML = '<b> <u> click here </u> </b> bto know more about timing functions in javascript'
+    document.body.appendChild(timing_link);
+    window.setTimeout(countdown, 1000);
 });
 
 

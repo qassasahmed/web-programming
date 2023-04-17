@@ -29,3 +29,37 @@ function welcome(f, l){
     
 }
 
+
+let header = document.getElementsByClassName('header')[0];
+header.style.justifyContent = 'space-between';
+let dark_mode = document.createElement('input');
+dark_mode.classList.add('btn');
+dark_mode.setAttribute('type', 'button');
+dark_mode.setAttribute('id', 'theme-toggle');
+dark_mode.value = 'Toggle';
+header.appendChild(dark_mode);
+
+var darkMode = false;
+
+
+// preference from localStorage should overwrite
+if (localStorage.getItem('theme') === 'dark') {
+	darkMode = true;
+} else if (localStorage.getItem('theme') === 'light') {
+	darkMode = false;
+}
+
+if (darkMode) {
+	document.body.classList.toggle('dark');
+    document.querySelectorAll('.form-container')[0].classList.toggle('dark');
+    };
+
+    
+document.addEventListener('DOMContentLoaded', () => {
+
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+		document.body.classList.toggle('dark');
+    	localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+	});
+
+});
